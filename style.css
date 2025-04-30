@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #262626;
+}
+
+.wrap .images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.wrap .images .image {
+  width: 400px;
+  height: 250px;
+  border: 10px solid white;
+  overflow: hidden;
+  border-radius: 15px;
+}
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.wrap h1 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: white;
+}
+.image:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+.wrap .popup {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* затемнение, по желанию */
+  display: flex;
+  justify-content: center; /* по горизонтали */
+  align-items: center; /* по вертикали */
+  flex-direction: column;
+  z-index: 1000;
+  padding: 65px;
+  display: none;
+}
+.wrap .popup img {
+  border: 5px solid white;
+  border-radius: 10px;
+}
+.wrap .popup span {
+  position: absolute;
+  top: 15px;
+  right: 9px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  background-color: green;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.popup .arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  z-index: 1001;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+.popup .arrow:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.popup .arrow.left {
+  left: 10px;
+}
+
+.popup .arrow.right {
+  right: 10px;
+}
