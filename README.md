@@ -18,11 +18,15 @@ A simple and responsive photo gallery project where you can:
 git clone https://github.com/your-username/photo-gallery.git
 
 2. Open `index.html` in your browser.
+   
+![image](https://github.com/user-attachments/assets/42cd4b36-40b0-47d1-9aea-6bdcd5137f3d)
 
-## Screenshot
 
-_Add a screenshot here to show how the gallery looks._
 
----
+
+
+
+![image](https://github.com/user-attachments/assets/6250a2f7-ecf7-4d9f-9faa-e59c4fe6483b)
+
 
 Built with ❤️ for practice and learning.
